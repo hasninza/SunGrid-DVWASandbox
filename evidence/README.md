@@ -1,12 +1,11 @@
-# Evidence
+# Evidence checklist
 
-Store genuine screenshots and verification output for the SunGrid DVWA lab in this folder.
+Required genuine evidence:
+- `snapshot.png`: VirtualBox Snapshot Manager with actual clean-baseline snapshot name and timestamp.
+- `verification-output.txt`: full output from running the host verifier on the actual VM/IP.
+- `host-only-network.png`: VM network settings visibly showing Host-Only mode.
+- `dvwa-browser.png`: DVWA login page loaded from the guest Host-Only IP.
 
-## Required evidence
+Current repository files are `snapshot.png` and `VirtualBox DVWA Host-Only Lab Setup.png`. Review the latter to ensure it clearly shows the Host-Only adapter settings.
 
-1. `snapshot.png` — a screenshot of VirtualBox Snapshot Manager showing the actual clean baseline snapshot name and timestamp.
-2. `verification-output.txt` — the complete terminal output from running the project's actual `verify.py` script on the host.
-3. `host-only-network.png` — a screenshot showing the VM network adapter configured as Host-Only.
-4. `dvwa-browser.png` — a screenshot showing DVWA loading at the lab's Host-Only IP address.
-
-Only add evidence captured from the real local lab. Do not use mockups or sample screenshots as proof. Confirm that the snapshot name in the screenshot matches the name configured in the project before submitting.
+`verification-output.txt` and `dvwa-browser.png` are still missing and must be captured from the real running VM. No simulated screenshots or invented terminal output should be submitted as real evidence.
