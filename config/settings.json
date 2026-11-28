@@ -1,0 +1,26 @@
+{
+  "project": "SunGrid-DVWA-Sandbox",
+  "vm": {
+    "name": "SunGrid-DVWA-VM",
+    "memory_mb": 2048,
+    "cpus": 2,
+    "disk_mb": 25600
+  },
+  "ubuntu": {
+    "version": "24.04",
+    "iso_url": "https://releases.ubuntu.com/24.04/ubuntu-24.04.3-live-server-amd64.iso",
+    "iso_filename": "ubuntu-24.04.3-live-server-amd64.iso"
+  },
+  "virtualbox": {
+    "vboxmanage_path": "",
+    "hostonly_adapter": "VirtualBox Host-Only Ethernet Adapter"
+  },
+  "snapshot": {
+    "name": "SunGrid-DVWA-Clean-Baseline",
+    "description": "Clean Ubuntu Server 24.04 and DVWA baseline for SunGrid Solar Task 1. Created before authorized vulnerability assessment activities."
+  },
+  "verification": {
+    "required_ports": [22, 80],
+    "http_path": "/DVWA/"
+  }
+}
